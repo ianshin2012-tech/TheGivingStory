@@ -135,3 +135,25 @@ body {
       margin-top: 40px;
       color: rgba(255,255,255,.7);
     }
+
+    .impact-hero {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.impact-hero .hero-content {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.impact-hero ul {
+  display: inline-block;
+  text-align: left;
+  margin: 20px auto;
+  padding-left: 25px;
+}
+
+.impact-hero li {
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
