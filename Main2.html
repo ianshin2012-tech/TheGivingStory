@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>The Giving Story</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+<link href="style.css" rel="stylesheet">
+
+</head>
+
+<body class="text-center">
+
+<div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+
+  <div id="navbar"></div>
+
+  <main role="main" class="inner cover mt-4">
+
+    
+
+    <!-- Carousel -->
+    <div id="demo" class="carousel slide mt-4" data-ride="carousel">
+
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <div class="carousel-inner">
+
+        <div class="carousel-item active">
+          <img src="images/TrashPicking.JPG" alt="Trash Picking">
+          <div class="carousel-caption">
+            <h3>Trash Picking</h3>
+            <p>Feb 7, 2026 San Pedro Square</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/TreePlanting.JPG" alt="Tree Planting">
+          <div class="carousel-caption">
+            <h3>Tree Planting</h3>
+            <p>Feb 7, 2026 San Pedro Square</p>
+          </div>
+        </div>
+
+        <div class="carousel-item">
+          <img src="images/ServiceAward.JPG" alt="Service Award">
+          <div class="carousel-caption">
+            <h3>Service Award</h3>
+            <p>Youth voices strengthening community</p>
+          </div>
+        </div>
+
+      </div>
+
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+
+    </div>
+
+    <!-- Who We Are -->
+    <div class="section-card">
+      <h2>Who We Are</h2>
+      <p>
+        The Giving Story, also known as G-Story, is a youth leadership service club.
+        We are NextGen Korean-Americans working together to strengthen our community
+        through service, compassion, and leadership.
+      </p>
+    </div>
+
+    <!-- What We Do -->
+    <div class="section-card">
+      <h2>What We Do</h2>
+      <p>
+        We serve our community through beautification, civic engagement,
+        senior service, youth mentoring, education, charity, and compassion.
+      </p>
+
+      <p>
+        Our programs include Buds Academy, music, art, sports, language classes,
+        homework help, coding, clothing donations, and service for people in need.
+      </p>
+    </div>
+
+    <!-- Our Partners -->
+    <div class="section-card">
+      <h2>Our Partners</h2>
+      <p>Silicon Valley Korean American Senior Citizens League</p>
+      <p>Jin-Duck Kim & Kyung-Sik Kim Foundation</p>
+      <p>SF & Bay Area Korean American Community Center - Han-Il Kim</p>
+      <p>CityTeam</p>
+      <p>Good Neighbors</p>
+
+      <a href="https://www.sfkorean.com/" target="_blank">SF Korean</a><br>
+      <a href="http://www.koreatimes.com/" target="_blank">Korea Times</a><br>
+      <a href="https://www.cityteam.org" target="_blank">CityTeam</a><br>
+      <a href="https://goodneighbors.us/" target="_blank">Good Neighbors</a>
+    </div>
+
+  </main>
+
+  <footer class="mastfoot mt-auto">
+    <div class="inner">
+      <p>The Giving Story | G-Story</p>
+    </div>
+  </footer>
+
+</div>
+
+<script>
+  fetch("Navbar.html")
+    .then(response => response.text())
+    .then(data => {
+      document.getElementById("navbar").innerHTML = data;
+    });
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
