@@ -1,137 +1,392 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title>The Giving Story</title>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
-  <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
-  <script>
-  fetch("Navbar.html")
-    .then(response => response.text())
-    .then(data => {
-      document.getElementById("navbar").innerHTML = data;
-    });
-</script>
-  <style>
-       .carousel-inner img {
-            width: 100%;
-            height: 500px;
-            object-fit: cover;
-            }
-  </style>
-<meta name="theme-color" content="#563d7c">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <style>
-      .bd-placeholder-img {
-        font-size: 1.125rem;
-        text-anchor: middle;
-        -webkit-user-select: none;
-        -moz-user-select: none;
-        -ms-user-select: none;
-        user-select: none;
-      }
+    <title>The Giving Story | Youth Service & Leadership</title>
 
-      @media (min-width: 768px) {
-        .bd-placeholder-img-lg {
-          font-size: 3.5rem;
-        }
-      }
-    </style>
+    <link rel="stylesheet"
+          href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
 
-    
-    <!-- Custom styles for this template -->
-    <link href="style.css" rel="stylesheet">
-  </head>
-  <body class="text-center">
-    
-<div class="cover-container d-flex w-100 p-3 mx-auto flex-column">
+    <link rel="stylesheet" href="style.css">
+</head>
 
-<div id="navbar"></div>
+<body>
 
-<!-- Carousel pictures -->
-<div id="demo" class="carousel slide mt-4" data-ride="carousel">
-        <ul class="carousel-indicators">
-            <li data-target="#demo" data-slide-to="0" class="active"></li>
-            <li data-target="#demo" data-slide-to="1"></li>
-            <li data-target="#demo" data-slide-to="2"></li>
-        </ul>
-        <div class="carousel-inner">
-            <div class="carousel-item active">
-            <img src="images/TrashPicking.JPG" alt="Trash Picking" width="1100" height="300">
-            <div class="carousel-caption">
-                <h1>Trash Picking</h1>
-                <p>Feb 7 2026 San Pedro Square</p>
-            </div>   
+    <!-- Navigation -->
+    <div id="navbar"></div>
+
+
+    <main class="site-main">
+
+        <!-- Hero -->
+        <section class="hero-modern">
+
+            <div>
+                <div class="eyebrow">
+                    NextGen Korean-American Youth
+                </div>
+
+                <h1>
+                    Small acts.<br>
+                    <em>Lasting impact.</em>
+                </h1>
+
+                <p>
+                    The Giving Story is a youth leadership service club bringing
+                    young people together to strengthen communities through service,
+                    compassion, education, and leadership.
+                </p>
+
+                <div class="hero-actions">
+
+                    <a class="btn-modern btn-dark"
+                       href="GetInvolved.html">
+                        Get Involved →
+                    </a>
+
+                    <a class="btn-modern"
+                       href="Program.html">
+                        Explore Programs
+                    </a>
+
+                </div>
             </div>
-            <div class="carousel-item">
-            <img src="images/TreePlanting.JPG" alt="Tree Planting" width="1100" height="300">
-            <div class="carousel-caption">
-                <h1>Treee Planting</h1>
-                <p>Feb 7 2026 San Pedro Square</p>
-            </div>   
+
+
+            <!-- Hero Images -->
+            <div class="hero-collage">
+
+                <div class="hero-photo one">
+                    <img src="images/TrashPicking.JPG"
+                         alt="Youth volunteers serving the community">
+                </div>
+
+                <div class="hero-photo two">
+                    <img src="images/TreePlanting.JPG"
+                         alt="Youth volunteers planting trees">
+                </div>
+
+                <div class="hero-badge">
+                    SERVE<br>
+                    LEAD<br>
+                    GROW ✦
+                </div>
+
             </div>
-            <div class="carousel-item">
-            <img src="images/ServiceAward.JPG" alt="New York" width="1100" height="300">
-            <div class="carousel-caption">
-                <h1>Service Award</h1>
-                <p>We love the Big Apple!</p>
-            </div>   
-            </div>
+
+        </section>
+
+
+        <!-- Scrolling Topics -->
+        <div class="ticker">
+            <span>
+                Community Service ✦
+                Youth Leadership ✦
+                Mentorship ✦
+                Education ✦
+                Compassion ✦
+                Civic Engagement ✦
+                Community Service ✦
+                Youth Leadership ✦
+            </span>
         </div>
-        <a class="carousel-control-prev" href="#demo" data-slide="prev">
-            <span class="carousel-control-prev-icon"></span>
-        </a>
-        <a class="carousel-control-next" href="#demo" data-slide="next">
-            <span class="carousel-control-next-icon"></span>
-        </a>
-</div>
 
-<!-- Who We Are -->
-    <div class="section-card">
-    <h1>Who We Are</h1>
-    <p>The Giving Story, also known as G-Story, is a youth leadership
-          service club. We are NextGen Korean-Americans working together
-          to strengthen our community through service, compassion, and leadership.</p>
-    <p>We are a network of passionate volunteers dedicated to help the community. Through teamwork, advocacy, and direct community action, we work everyday to make the world a better place. Whether we are cleaning up trash or helping senior citizens, we are defined by our shared belief that ordinary people can do extraordinary things when they work together.</p>
-  </div>
 
-      <!-- What We Do -->
-    <div class="section-card">
-      <h2>What We Do</h2>
-      <p>
-        We serve our community through beautification, civic engagement,
-        senior service, youth mentoring, education, charity, and compassion.
-      </p>
+        <!-- Who We Are -->
+        <section class="section alt">
 
-      <p>
-        Our programs include Buds Academy, music, art, sports, language classes,
-        homework help, coding, clothing donations, and service for people in need.
-      </p>
-    </div>
+            <div class="section-inner">
 
- <!-- Our Partners -->
-    <div class="section-card">
-      <h2>Our Partners</h2>
-      <p>Silicon Valley Korean American Senior Citizens League</p>
-      <p>Jin-Duck Kim & Kyung-Sik Kim Foundation</p>
-      <p>SF & Bay Area Korean American Community Center - Han-Il Kim</p>
-      <p>CityTeam</p>
-      <p>Good Neighbors</p>
+                <div class="section-head">
 
-      <a href="https://www.sfkorean.com/" target="_blank">SF Korean</a><br>
-      <a href="http://www.koreatimes.com/" target="_blank">Korea Times</a><br>
-      <a href="https://www.cityteam.org" target="_blank">CityTeam</a><br>
-      <a href="https://goodneighbors.us/" target="_blank">Good Neighbors</a>
-    </div>
+                    <div>
+                        <div class="eyebrow">
+                            Who We Are
+                        </div>
 
-      <footer class="mastfoot">
-    <div class="inner">
-      <p>The Giving Story | G-Story</p>
-    </div>
-  </footer>
-</div>
+                        <h2>
+                            Growing leaders by<br>
+                            serving together.
+                        </h2>
+                    </div>
+
+                    <p>
+                        We believe ordinary people can do extraordinary things when
+                        they work together. Our volunteers turn compassion into action
+                        through hands-on service and community partnerships.
+                    </p>
+
+                </div>
+
+
+                <div class="mission-grid">
+
+                    <!-- Mission -->
+                    <article class="mission-card dark">
+
+                        <span class="num">
+                            01 · OUR MISSION
+                        </span>
+
+                        <div>
+                            <h3>Service with purpose.</h3>
+
+                            <p>
+                                We connect youth with meaningful opportunities to help
+                                neighbors, support seniors, improve public spaces, and
+                                serve people in need.
+                            </p>
+                        </div>
+
+                    </article>
+
+
+                    <!-- Approach -->
+                    <article class="mission-card light">
+
+                        <span class="num">
+                            02 · OUR APPROACH
+                        </span>
+
+                        <div>
+                            <h3>Leadership through action.</h3>
+
+                            <p>
+                                Every project is a chance to build confidence, empathy,
+                                teamwork, civic responsibility, and a lifelong habit
+                                of giving back.
+                            </p>
+                        </div>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Programs -->
+        <section class="section">
+
+            <div class="section-inner">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            What We Do
+                        </div>
+
+                        <h2>
+                            Programs built for<br>
+                            community impact.
+                        </h2>
+
+                    </div>
+
+                    <a class="btn-modern"
+                       href="Program.html">
+                        View all programs →
+                    </a>
+
+                </div>
+
+
+                <div class="program-grid">
+
+                    <!-- Community Service -->
+                    <article class="program-card">
+
+                        <div class="program-icon">
+                            🌱
+                        </div>
+
+                        <h3>Community Service</h3>
+
+                        <p>
+                            Beautification, neighborhood cleanups, senior service,
+                            and volunteer projects with local partners.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Buds Academy -->
+                    <article class="program-card">
+
+                        <div class="program-icon">
+                            🎓
+                        </div>
+
+                        <h3>Buds Academy</h3>
+
+                        <p>
+                            Mentoring, homework help, English development, arts,
+                            sports, self-defense, and digital skills.
+                        </p>
+
+                    </article>
+
+
+                    <!-- Compassion & Charity -->
+                    <article class="program-card">
+
+                        <div class="program-icon">
+                            🤝
+                        </div>
+
+                        <h3>Compassion & Charity</h3>
+
+                        <p>
+                            Clothing drives, nonprofit support, outreach, and service
+                            projects that meet real community needs.
+                        </p>
+
+                    </article>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Featured Photo -->
+        <section class="photo-band">
+
+            <img src="images/ServiceAward.JPG"
+                 alt="The Giving Story community service recognition">
+
+        </section>
+
+
+
+        <!-- Impact Statement -->
+        <section class="impact-statement">
+            <div class="impact-statement-inner">
+                <div class="eyebrow light-eyebrow">Why We Serve</div>
+                <h2>Young people have the power to shape stronger communities.</h2>
+                <p>
+                    We create spaces where service becomes leadership, compassion becomes action,
+                    and every volunteer has an opportunity to make a meaningful difference.
+                </p>
+                <a href="Impact.html" class="text-link">See our impact →</a>
+            </div>
+        </section>
+
+        <!-- Community Partners -->
+        <section class="section alt">
+
+            <div class="section-inner">
+
+                <div class="section-head">
+
+                    <div>
+
+                        <div class="eyebrow">
+                            Community
+                        </div>
+
+                        <h2>
+                            Stronger together.
+                        </h2>
+
+                    </div>
+
+                    <p>
+                        We collaborate with community organizations, public agencies,
+                        nonprofits, and local leaders to create opportunities where
+                        youth can serve and grow.
+                    </p>
+
+                </div>
+
+
+                <div class="partners">
+
+                    <span class="partner-pill">
+                        Silicon Valley Korean American Senior Citizens League
+                    </span>
+
+                    <span class="partner-pill">
+                        Jin-Duck Kim & Kyung-Sik Kim Foundation
+                    </span>
+
+                    <span class="partner-pill">
+                        SF & Bay Area Korean American Community Center
+                    </span>
+
+                    <span class="partner-pill">
+                        CityTeam
+                    </span>
+
+                    <span class="partner-pill">
+                        Good Neighbors
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- Call To Action -->
+        <section class="section">
+
+            <div class="section-inner">
+
+                <div class="cta-panel">
+
+                    <h2>
+                        Your story can start with one act of service.
+                    </h2>
+
+                    <a class="btn-modern"
+                       href="GetInvolved.html">
+                        Join The Giving Story →
+                    </a>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- Footer -->
+    <footer class="mastfoot">
+
+        <strong>
+            The Giving Story · G-Story
+        </strong>
+
+        <br>
+
+        <small>
+            Youth · Service · Leadership · Community
+        </small>
+
+    </footer>
+
+
+    <!-- Load Navigation -->
+    <script>
+        fetch('Navbar.html')
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('navbar').innerHTML = html;
+            });
+    </script>
+
 </body>
+
 </html>
